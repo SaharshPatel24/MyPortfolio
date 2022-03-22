@@ -1,0 +1,134 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    position: relative;;
+    font-size:xx-large;
+    color: white;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:50%;
+    left: 18%;
+    min-height: 100vh;
+}
+
+.intro h1{
+    position: relative;
+    top: 25%;
+}
+
+.image{
+    left: 5%;
+    width: 40%;
+    position: relative;
+}
+
+.image img{
+    position: fixed;
+    bottom: -200px;
+
+}
+
+@keyframes pop-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes pop-out {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  .speed-dial {
+    position: fixed;
+    top: 25%;
+    left: 5%;
+    text-align: center;
+    display: inline-block;
+  }
+  .speed-dial a,
+  .speed-dial a:hover,
+  .speed-dial a:active,
+  .speed-dial a:visited,
+  .speed-dial a:focus {
+    color: #fafafa;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .speed-dial .toggle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 32px;
+    line-height: 75px;
+    margin: 8px 0;
+  }
+  .speed-dial:hover .dials a {
+    animation: pop-in 0.3s ease both;
+  }
+  .speed-dial .dials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .speed-dial .dials a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 50px;
+    margin: 8px 0;
+    transform: scale(0);
+    animation: pop-out 0.3s ease both;
+  }
+  .speed-dial .dials a.pop-in {
+    animation: pop-in 0.3s ease both;
+  }
+  .speed-dial .dials li:nth-child(0) a {
+    animation-delay: 0s;
+  }
+  .speed-dial .dials li:nth-child(1) a {
+    animation-delay: 0.1s;
+  }
+  .speed-dial .dials li:nth-child(2) a {
+    animation-delay: 0.2s;
+  }
+  .speed-dial .dials li:nth-child(3) a {
+    animation-delay: 0.3s;
+  }
+  .speed-dial .dials li:nth-child(4) a {
+    animation-delay: 0.4s;
+  }
+  .speed-dial .dials li:nth-child(5) a {
+    animation-delay: 0.5s;
+  }
+  .speed-dial .dials li:nth-child(6) a {
+    animation-delay: 0.6s;
+  }
+  
+  .bg-bars {
+    background-color: #15b897;
+  }
+  
+  .bg-user {
+    background-color: #2daae2;
+  }
+  
+  .bg-code {
+    background-color: #3c5b9b;
+  }
+  
+  .bg-contact {
+    background-color: #f73e29;
+  }
