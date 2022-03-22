@@ -15,9 +15,9 @@ const Home = () => {
                 <div className="speed-dial">
                     <a className="toggle bg-bars"><span className="fa fa-bars"></span></a>
                     <ul className="dials">
-                        <li><a className="bg-user" href="#"><span className="fa fa-user"></span></a></li>
-                        <li><a className="bg-code" href="#"><span className="fa fa-code"></span></a></li>
-                        <li><a className="bg-contact" href="#"><span className="fa fa-envelope"></span></a></li>
+                        <li><a className="bg-user" href="/"><span className="fa fa-user"></span></a></li>
+                        <li><a className="bg-code" href="/about"><span className="fa fa-code"></span></a></li>
+                        <li><a className="bg-contact" href="/contact"><span className="fa fa-envelope"></span></a></li>
                     </ul>
                 </div>
             </Col>
