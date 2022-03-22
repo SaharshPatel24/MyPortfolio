@@ -1,6 +1,6 @@
 import React from "react";
 import './home.scss'
-import { Col, Row, Tooltip } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import logo from "../../images/IMG_0007-depositphotos-bgremover.png";
 
