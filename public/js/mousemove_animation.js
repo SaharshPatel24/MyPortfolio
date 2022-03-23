@@ -12,6 +12,7 @@ function animatedCircles(event) {
 
     let color = colors[Math.floor(Math.random() * colors.length)];
     circle.style.borderColor = color;
+    circle.style.backgroundColor = color;
 
     circle.style.transition = 'all 0.5s linear 0s';
 

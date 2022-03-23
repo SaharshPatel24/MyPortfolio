@@ -4,7 +4,8 @@ body{
 }
 
 .circle {
-    background-image:linear-gradient(aquamarine,darkgrey);
+    /* background-image:linear-gradient(aquamarine,darkgrey); */
+    background-color: #000;
     width: 1px;
     height: 1px;
     border-radius: 50%;
