@@ -11,7 +11,7 @@ const Home = () => {
 
             <Col>
                 <div className="speed-dial">
-                    <a className="toggle bg-bars"><span className="fa fa-bars"></span></a>
+                    <div className="toggle bg-bars"><span className="fa fa-bars"></span></div>
                     <ul className="dials">
                         <li><a className="bg-user" href="/"><span className="fa fa-user"></span></a></li>
                         <li><a className="bg-code" href="/about"><span className="fa fa-code"></span></a></li>
