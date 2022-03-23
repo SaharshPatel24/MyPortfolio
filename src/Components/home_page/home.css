@@ -1,7 +1,6 @@
 .home{
     display: flex;
     flex-direction: row;
-    position: relative;;
     font-size:xx-large;
     color: white;
     flex-shrink: 1;
@@ -11,6 +10,7 @@
     display: flex;
     flex-direction: column;
     position:fixed;
+    max-width: 50%;
     width:50%;
     left: 18%;
     top: 25%;
@@ -37,6 +37,33 @@
 
 }
 
+@media screen and (max-width: 1100px) {
+  .home{
+    flex-direction: column;
+  }
+  .intro{
+    font-size: smaller;
+    max-width: 80%;
+    width: 80%;
+    margin-left: 12%;
+    top: 25;
+  }
+  .speed-dial{
+    display: flex;
+    top: 0%;
+  }
+  .image{
+    width: 0%;
+  }
+  .speed-dial{
+    position: inherit;
+  }
+  .image{
+    display: none;
+    margin: 0;
+  }
+}
+
 
 
 @keyframes pop-in {
@@ -58,7 +85,7 @@
 
   @keyframes slide-up{
   0%{
-    transform: translateY(80vh)
+    transform: translateY(100vh)
   }
   100%{
     transform: translateY(0)
