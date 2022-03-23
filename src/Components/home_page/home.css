@@ -4,26 +4,31 @@
     position: relative;;
     font-size:xx-large;
     color: white;
+    flex-shrink: 1;
 }
 
 .intro{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position:fixed;
     width:50%;
     left: 18%;
-    min-height: 100vh;
-}
-
-.intro h1{
-    position: relative;
     top: 25%;
+    text-align: left;
+    background: #25CC0F;
+    background: -webkit-linear-gradient(to bottom right, #25CC0F 0%, #BFBF32 59%);
+    background: -moz-linear-gradient(to bottom right, #25CC0F 0%, #BFBF32 59%);
+    background: linear-gradient(to bottom right, #25CC0F 0%, #BFBF32 59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both
 }
 
 .image{
-    left: 5%;
+    right: 5%;
     width: 40%;
-    position: relative;
+    position: fixed;
 }
 
 .image img{
@@ -49,6 +54,15 @@
     100% {
       transform: scale(0);
     }
+  }
+
+  @keyframes slide-up{
+  0%{
+    transform: translateY(80vh)
+  }
+  100%{
+    transform: translateY(0)
+  }
   }
   .speed-dial {
     position: fixed;

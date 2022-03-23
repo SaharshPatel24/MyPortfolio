@@ -1,5 +1,5 @@
 import React from "react";
-import './home.scss'
+import './home.css'
 import { Col, Row } from "react-bootstrap";
 import logo from "../../images/IMG_0007-depositphotos-bgremover.png";
 
@@ -19,9 +19,12 @@ const Home = () => {
                     </ul>
                 </div>
             </Col>
-            <Row className="intro">
-                <h1>Saharsh Patel</h1>
-            </Row>
+            <Col className="intro">
+                <h1>PATEL</h1>
+                <h1>SAHARSH</h1>
+                <h4>Bring Ideas To Life with Code</h4>
+                <p>Web Developer.Traveller.UI/UX Designer</p>
+            </Col>
             <Col className="image">
                 <img src={logo} alt="img" width={450} height={600} />
             </Col>

@@ -21,6 +21,6 @@ function animatedCircles(event) {
 
     circle.style.width = '50px';
     circle.style.height = '20px';
-    circle.style.borderWidth = '5px';
+    circle.style.borderWidth = '50%';
     circle.style.opacity = 0;
 }
