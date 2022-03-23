@@ -2,3 +2,12 @@ body{
     margin-top: 0%;
     background-color: rgb(31, 20, 20);
 }
+
+.circle {
+    background-image:linear-gradient(aquamarine,darkgrey);
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute;
+  }
