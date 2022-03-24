@@ -198,7 +198,6 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
 @media only screen and (max-width: 500px) {
   .home{
     flex-direction: column;
-    overflow-y: scroll;
   }
  .image img{
    margin-top: 10%;
