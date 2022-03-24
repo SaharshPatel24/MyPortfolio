@@ -189,6 +189,10 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
  .intro{
    font-size: 16px;
  } 
+
+ .speed-dial{
+   margin-top: 2%;
+ }
 }
 
 @media only screen and (max-width: 500px) {
