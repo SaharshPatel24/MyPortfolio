@@ -201,11 +201,13 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
     overflow-y: scroll;
   }
  .image img{
-  display: none; 
+   margin-top: 10%;
+  display:block; 
  }
 
  .image{
-   height: auto;
+   max-width: 100%;
+   width: 100%;
  }
 
  .speeddial{
