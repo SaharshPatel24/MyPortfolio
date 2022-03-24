@@ -208,11 +208,15 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
 
 
  .intro{
-   background-color: #15b897;
+   margin-left: 8%;
    max-width: 100%;
    width: 100%;
    height: auto;
    font-size: 24px;
+ }
+
+ .intro .info{
+   animation: pop-in 1s ease both;
  }
 
  .intro p{
