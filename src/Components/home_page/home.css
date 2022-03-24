@@ -200,7 +200,7 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
     flex-direction: column;
   }
  .image img{
-   margin-top: 10%;
+   margin-top: 0%;
   display:block; 
  }
 
@@ -216,6 +216,7 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
  }
 
  .speed-dial{
+   background-color: #24869E;
    margin-top: 10%;
    display: flex;
     flex-direction: row;
@@ -235,7 +236,6 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
 
 
  .intro{
-   margin-left: 8%;
    max-width: 100%;
    width: 100%;
    height: auto;
@@ -243,6 +243,7 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
  }
 
  .intro .info{
+  margin-left: 8%;
    animation: pop-in 1s ease both;
  }
 
