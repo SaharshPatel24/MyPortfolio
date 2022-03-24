@@ -12,7 +12,7 @@ function animatedCircles(event) {
 
     let color = colors[Math.floor(Math.random() * colors.length)];
     circle.style.borderColor = color;
-    circle.style.backgroundColor = color;
+    // circle.style.backgroundColor = color;
 
     circle.style.transition = 'all 0.5s linear 0s';
 
@@ -20,7 +20,7 @@ function animatedCircles(event) {
     circle.style.top = circle.offsetTop - 20 + 'px';
 
     circle.style.width = '50px';
-    circle.style.height = '20px';
+    circle.style.height = '200px';
     circle.style.borderWidth = '50%';
     circle.style.opacity = 0;
 }
