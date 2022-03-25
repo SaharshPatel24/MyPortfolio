@@ -1,4 +1,5 @@
 .home {
+  margin: 0%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -9,20 +10,21 @@
   width: 100%;
   height: 100vh;
   font-size:xx-large;
-    color: white;
-    background-color: black;
+  color: white;
+  background-color: black;
+  overflow-y: scroll;
 }
 
 .speeddial {
   max-width: 20%;
   width: 20%;
   height: auto;
-  /* display: inline-block;
+  display: inline-block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
-  order: 0; */
+  order: 0;
 }
 
 .speed-dial{
@@ -187,22 +189,13 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
    }
 }
 
-@media only screen and (max-width: 900px) {
- .intro{
-   font-size: 20px;
- } 
-
- .speed-dial{
-   margin-top: 2%;
- }
-}
-
 @media only screen and (max-width: 500px) {
   .home{
     flex-direction: column;
   }
  .image img{
-   margin-top: 0%;
+   margin-top: 5%;
+   margin-left: 15%;
   display:block; 
  }
 
@@ -215,17 +208,19 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
  .speeddial{
    max-width: 100%;
    width: 100%;
+   height: auto;
  }
 
  .speed-dial{
    background-color: #24869E;
-   margin-top: 10%;
+   margin-top: 8%;
    display: flex;
     flex-direction: row;
-    padding: 8px;
+    height: auto;
  }
 
  .speed-dial .dials{
+   margin-top: 0%;
    width:220px;
   display: flex;
    flex-direction: row;
@@ -238,6 +233,7 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
 
 
  .intro{
+   margin-top: 0%;
    max-width: 100%;
    width: 100%;
    height: auto;
@@ -245,6 +241,7 @@ background: linear-gradient(to left, #00FF00 11%, #24869E 69%);
  }
 
  .intro .info{
+   margin-top: 8%;
   margin-left: 8%;
    animation: pop-in 1s ease both;
  }
