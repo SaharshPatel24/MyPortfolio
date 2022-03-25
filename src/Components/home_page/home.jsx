@@ -5,10 +5,16 @@ import logo from "../../images/IMG_0007-depositphotos-bgremover.png";
 
 const Home = () => {
 
-
+    // function disableBack() {
+    //     window.history.forward()
+    // }
+    // window.onload = disableBack();
+    // window.onpageshow = function (e) {
+    //     if (e.preventDefault())
+    //         disableBack();
+    // }
     return (
         <Row className="home">
-
             <Col className="speeddial">
                 <div className="speed-dial">
 
