@@ -27,11 +27,11 @@ const Home = () => {
                 </div>
             </Col>
             <Col className="intro">
-                <div className="info">
-                    <h1>PATEL</h1>
-                    <h1>SAHARSH</h1>
-                    <h4>Bring Ideas To Life with Code</h4>
-                    <p>Web Developer.Traveller.UI/UX Designer</p>
+                <div className="info" style={{ fontFamily: "cursive" }}>
+                    <h1 style={{ fontSize: "80px" }}>PATEL</h1>
+                    <h1 style={{ fontSize: "80px" }}>SAHARSH</h1>
+                    <h4 style={{ fontSize: "40px" }}>Bring Ideas To Life with Code</h4>
+                    <p style={{ fontSize: "35px" }}>Web Developer.Traveller.UI/UX Designer</p>
                 </div>
             </Col>
             <Col className="image">

@@ -9,7 +9,7 @@ const About = () => {
         <div className="about">
             <div className="sec">
                 <div className="top-heading">
-                    <h1>Hello. I'm <span className="name">Saharsh Patel</span> </h1>
+                    <h1>Hello ✨. I'm <span className="name">Saharsh Patel</span> </h1>
                     <p>This is the story about <span className="name"> me</span> and my future with <span className="blue">you</span></p>
                 </div>
                 <div className="back-button"><a href="/"><i className="fas fa-arrow-left">  BackToHome</i> </a></div>
@@ -18,7 +18,7 @@ const About = () => {
                 <span>Who Am I ?</span>
                 <p>I love the world around me, and I am driven by the desire to learn and to develop.I had started my journey for developing from the Gujarat,India. While studying in primary school I have been enclosed to the HTML, From that time I had decided to pursue the Web Developer. Afterthat I had finish my secondary school over there in India and I just move to Canada, Toronto because over here there are lots of oppurtunities for the developers</p>
             </div>
-            <Carousel interval={2000} style={{ backgroundColor: "black", height: "80vh" }}>
+            <Carousel interval={3000} style={{ backgroundColor: "#232323", height: "80vh" }}>
                 <Carousel.Item>
                     <div className="card-design">
                         <h1>Life Goal</h1>
