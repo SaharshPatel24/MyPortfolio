@@ -27,7 +27,7 @@ const Home = () => {
                 </div>
             </Col>
             <Col className="intro">
-                <div className="info" style={{ fontFamily: "cursive" }}>
+                <div className="info">
                     <h1>PATEL</h1>
                     <h1>SAHARSH</h1>
                     <h4>Bring Ideas To Life with Code</h4>
