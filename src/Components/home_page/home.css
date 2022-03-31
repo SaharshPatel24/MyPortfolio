@@ -51,6 +51,27 @@
     animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both 
 }
 
+.intro .info h1{
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.intro .info h1:hover{
+  color: #f73e29;
+}
+
+.intro .info h4{
+  font-size: 40px;
+}
+
+.intro .info h4:hover{
+  color:#f73e29;
+}
+
+.intro .info p{
+  font-size: 20px;
+}
+
 
 .image {
   max-width: 30%;
@@ -189,7 +210,7 @@
     flex-direction: column;
   }
  .image img{
-   margin-top: 5%;
+   margin-top: 30%;
    margin-left: 15%;
   display:block; 
  }
@@ -237,13 +258,19 @@
  .intro .info{
    margin-top: 8%;
   margin-left: 8%;
-  font-family: cursive !important;
    animation: pop-in 1s ease both;
-  
  }
 
- .intro p{
-   font-size: 16px;
+ .intro .info h1{
+   font-size: 40px;
+ }
+
+ .intro .info h4{
+   font-size: 22px;
+ }
+
+ .intro .info p{
+   font-size: 17px;
  }
 
  .circle{
