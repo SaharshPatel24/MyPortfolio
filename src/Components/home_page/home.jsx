@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import './home.css'
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button, Offcanvas } from "react-bootstrap";
 import logo from "../../images/IMG_0007-depositphotos-bgremover.png";
+import Footer from "../footer/footer";
+import Chatbot from 'react-chatbot-kit'
+import 'react-chatbot-kit/build/main.css'
+
+import chatbot_config from "../chatbot/chatbot_config";
+import ActionProvider from "../chatbot/action_provider";
+import MessageParser from "../chatbot/message_parser";
+
 
 const Home = () => {
+    const [show, setShow] = useState(false);
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     // function disableBack() {
     //     window.history.forward()
     // }
@@ -13,7 +24,7 @@ const Home = () => {
     //     if (e.preventDefault())
     //         disableBack();
     // }
-    return (
+    return (<>
         <Row className="home">
             <Col className="speeddial">
                 <div className="speed-dial">
@@ -33,11 +44,26 @@ const Home = () => {
                     <h4>Bring Ideas To Life with Code</h4>
                     <p>Web Developer.Traveller.UI/UX Designer</p>
                 </div>
+                <Button variant="primary" onClick={handleShow} >
+                    Launch
+                </Button>
             </Col>
+
             <Col className="image">
                 <img src={logo} alt="img" width={450} height={600} />
             </Col>
+            <Offcanvas placement="end" show={show} onHide={handleClose} backdrop>
+                <Offcanvas.Header closeButton ></Offcanvas.Header>
+                <Chatbot
+                    config={chatbot_config}
+                    messageParser={MessageParser}
+                    actionProvider={ActionProvider}
+                />
+            </Offcanvas>
+            <Footer />
         </Row>
+    </>
+
 
     );
 };

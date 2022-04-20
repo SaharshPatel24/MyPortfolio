@@ -15,6 +15,43 @@
   overflow-y: scroll;
 }
 
+/*///////// react chat-bot design ///////////*/
+
+.react-chatbot-kit-chat-container { 
+  width: 100% !important;
+  height: 90% !important;
+}
+
+.react-chatbot-kit-chat-header {
+  background-color:#0ca4a5!important;
+  color: white !important; 
+}
+
+
+.react-chatbot-kit-chat-bot-message{
+  background-color: #f73e29;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  width: 80% !important;
+  margin-left: 2px !important;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.react-chatbot-kit-chat-message-container {
+  min-width: 100%;
+  min-height: 85%;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+
+/*////////////////////////////////////////////////*/
+
 .speeddial {
   max-width: 20%;
   width: 20%;
@@ -90,7 +127,6 @@
 .image img{
   margin-top: 80%;
 }
-
 
 .speed-dial a,
   .speed-dial a:hover,

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
 import '../contact_page/contact.css';
 import { Form, Button, Row, Col } from "react-bootstrap";
 
@@ -19,8 +18,8 @@ const Contact = () => {
                 <h1>Working Together is Success</h1>
                 <p>~Henry Ford</p>
             </div>
-            <Row>
-                <Col className="col-6">
+            <Row className="main-row">
+                <Col className="col-6 form-col">
                     <div className="form-box">
                         <Form className="form">
 
@@ -62,13 +61,6 @@ const Contact = () => {
                         Lets Have Some Fun!!!
                         <div className="joke">{posts}</div>
                         <Button className="joke-button" onClick={fetchApi}> get new joke😂</Button>
-                        {/* {quote.map((quotes, index) => {
-                            return (
-                                <div>
-                                    <p>{quotes.text}</p>
-                                </div>
-                            );
-                        })} */}
                     </div>
                 </Col>
             </Row>

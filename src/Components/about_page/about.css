@@ -15,7 +15,7 @@ flex-direction: row;
 }
 
 .top-heading{
-    animation: pop-inside 0.7s cubic-bezier(0.25, 0.8, 0.5, 0.5) both ;
+    animation: pop-inside 0.7s cubic-bezier(0.60, 0.1, 0.5, 0.75) both ;
     transition: smooth;
     width: 80%;
     height: 150px;
@@ -61,7 +61,7 @@ flex-direction: row;
 
 .heading p{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 
 }
 
