@@ -43,10 +43,12 @@ const Home = () => {
                     <h1>SAHARSH</h1>
                     <h4>Bring Ideas To Life with Code</h4>
                     <p>Web Developer.Traveller.UI/UX Designer</p>
+                    <button className="chatbot-button" onClick={handleShow} >
+                        Let's  Chat
+                        <i className="fa fa-robot"></i>
+                    </button>
                 </div>
-                <Button variant="primary" onClick={handleShow} >
-                    Launch
-                </Button>
+
             </Col>
 
             <Col className="image">
