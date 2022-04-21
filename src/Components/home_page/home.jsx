@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './home.css'
-import { Col, Row, Button, Offcanvas } from "react-bootstrap";
+import { Col, Row, Offcanvas } from "react-bootstrap";
 import logo from "../../images/IMG_0007-depositphotos-bgremover.png";
 import Footer from "../footer/footer";
 import Chatbot from 'react-chatbot-kit'

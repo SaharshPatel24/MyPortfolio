@@ -20,6 +20,7 @@
 .chatbot-button{
   position:relative;
   margin-top: 1%;
+  margin-bottom: 10%;
   background:#6e9887;
   border:1px solid white;
   padding:5px;
@@ -279,6 +280,7 @@
   .home{
     flex-direction: column;
   }
+  
  .image img{
    margin-top: 20%;
    margin-left: 15%;
