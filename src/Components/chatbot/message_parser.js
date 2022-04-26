@@ -8,17 +8,13 @@ class MessageParser {
         message = message.toLowerCase();
         if (message.includes('hello')) {
             this.actionProvider.handleHello();
-        }
-        else if (message.includes('about saharsh')) {
+        } else if (message.includes('about saharsh')) {
             this.actionProvider.handleAboutSaharsh();
-        }
-        else if (message.includes('how are you')) {
+        } else if (message.includes('how are you')) {
             this.actionProvider.handleHowAreYou();
-        }
-        else {
+        } else {
             this.actionProvider.handleUnknown();
         }
-
     }
 }
 

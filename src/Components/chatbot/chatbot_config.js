@@ -1,7 +1,7 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 
 import AboutSaharsh from './widgets/about_me';
-import Options from './options/options';
+import LearningOptions from './options/options';
 
 const botName = 'Saharsh`s bot';
 
@@ -16,7 +16,7 @@ const chatbot_config = {
             {
                 withAvatar: false,
                 delay: 600,
-                widget: "options",
+                widget: "learningOptions",
             }
         ),
     ],
@@ -35,8 +35,8 @@ const chatbot_config = {
     },
     widgets: [
         {
-            widgetName: "options",
-            widgetFunc: (props) => <Options {...props} />
+            widgetName: "learningOptions",
+            widgetFunc: (props) => <LearningOptions {...props} />,
         },
         {
             widgetName: 'about_saharsh',
