@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './home.css'
 import { Col, Row, Offcanvas } from "react-bootstrap";
-import logo from "../../images/IMG_0007-depositphotos-bgremover.png";
+import logo from "../../images/IMG_0007-depositphotos-bgremover.avif";
 import Footer from "../footer/footer";
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
@@ -16,14 +16,6 @@ const Home = () => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    // function disableBack() {
-    //     window.history.forward()
-    // }
-    // window.onload = disableBack();
-    // window.onpageshow = function (e) {
-    //     if (e.preventDefault())
-    //         disableBack();
-    // }
     return (<>
         <Row className="home">
             <Col className="speeddial">
