@@ -147,7 +147,7 @@
 
 .image img{
   margin-top: 80%;
-  filter: drop-shadow(0 0 1rem black);
+  filter: drop-shadow(0 0 0.55rem black);
 }
 
 .speed-dial a,

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './home.css'
 import { Col, Row, Offcanvas } from "react-bootstrap";
 import logo from "../../images/IMG_0007-depositphotos-bgremover.avif";
+import logoofpng from "../../images/IMG_0007-depositphotos-bgremover.png";
 import Footer from "../footer/footer";
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
@@ -44,7 +45,10 @@ const Home = () => {
             </Col>
 
             <Col className="image">
-                <img src={logo} alt="img" width={450} height={600} />
+                <picture>
+                    <source srcSet={logoofpng} alt="img" width={450} height={600}></source>
+                    <img src={logo} alt="img" width={450} height={600} />
+                </picture>
             </Col>
             <Offcanvas placement="end" show={show} onHide={handleClose} backdrop>
                 <Offcanvas.Header closeButton ></Offcanvas.Header>
