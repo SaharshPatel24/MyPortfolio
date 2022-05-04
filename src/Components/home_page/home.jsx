@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import './home.css'
 import { Col, Row, Offcanvas } from "react-bootstrap";
-import logo from "../../images/IMG_0007-depositphotos-bgremover.avif";
-import logoofpng from "../../images/IMG_0007-depositphotos-bgremover.png";
-import Footer from "../footer/footer";
 import Chatbot from 'react-chatbot-kit'
 import 'react-chatbot-kit/build/main.css'
 
 import chatbot_config from "../chatbot/chatbot_config";
 import ActionProvider from "../chatbot/action_provider";
 import MessageParser from "../chatbot/message_parser";
+import Navbar from "../navbar/navbar";
 
 
 const Home = () => {
@@ -18,38 +16,21 @@ const Home = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (<>
+        <Navbar />
         <Row className="home">
-            <Col className="speeddial">
-                <div className="speed-dial">
-
-                    <div className="toggle bg-bars"><span className="fa fa-bars"></span></div>
-                    <ul className="dials">
-                        <li><a className="bg-user" href="/"><span className="fa fa-user"></span></a></li>
-                        <li><a className="bg-code" href="/about"><span className="fa fa-code"></span></a></li>
-                        <li><a className="bg-contact" href="/contact"><span className="fa fa-envelope"></span></a></li>
-                    </ul>
-                </div>
-            </Col>
             <Col className="intro">
                 <div className="info">
-                    <h1>PATEL</h1>
-                    <h1>SAHARSH</h1>
+                    <div className="green">Hi, my name is</div>
+                    <h1>Patel Saharsh.</h1>
                     <h4>Bring Ideas To Life with Code</h4>
-                    <p>Web Developer.Traveller.UI/UX Designer</p>
+                    <p>Web Developer<span className="green">.</span>Traveller<span className="green">.</span>UI/UX Designer</p>
                     <button className="chatbot-button" onClick={handleShow} >
                         Let's  Chat
                         <i className="fa fa-robot"></i>
                     </button>
                 </div>
-
             </Col>
 
-            <Col className="image">
-                <picture>
-                    <source srcSet={logoofpng} alt="img" width={450} height={600}></source>
-                    <img src={logo} alt="img" width={450} height={600} />
-                </picture>
-            </Col>
             <Offcanvas placement="end" show={show} onHide={handleClose} backdrop>
                 <Offcanvas.Header closeButton ></Offcanvas.Header>
                 <Chatbot
@@ -58,7 +39,21 @@ const Home = () => {
                     actionProvider={ActionProvider}
                 />
             </Offcanvas>
-            <Footer />
+            <div className='buttons-container'>
+                <div className='button facebook'>
+                    <i className="fab fa-facebook-f fa-2x"></i>
+                </div>
+                <div className='button twitter'>
+                    <i className="fab fa-twitter fa-2x"></i>
+                </div>
+                <div className='button github'>
+                    <i className="fab fa-github fa-2x"></i>
+                </div>
+                <div className='button instagram'>
+                    <i className="fab fa-instagram fa-2x"></i>
+                </div>
+            </div>
+            <div className="line-5"></div>
         </Row>
     </>
 

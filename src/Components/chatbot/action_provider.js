@@ -1,4 +1,5 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
+import LearningOptions from './options/options';
 
 class ActionProvider {
     constructor(createChatbotMessage, setStateFunc, createClientMessage) {
@@ -23,7 +24,34 @@ class ActionProvider {
     handleAboutSaharsh() {
 
         const message = createChatBotMessage(
-            ' Saharsh Patel is passionate and enthusiastic web-developer. From his schools he was very good in the computers and had started learning basics of web-development.Currently, he is about to complete his Computer Programming and Analysis course from the Seneca College.He had gain good skills in the field of web developemt. He has some good projects in his portfolio Would you like to check it out ?'
+            ' Saharsh Patel is passionate and enthusiastic web-developer. From his schools he was very good in the computers and had started learning basics of web-development.Currently, he is about to complete his Computer Programming and Analysis course from the Seneca College.He had gain good skills in the field of web developemt. He has some good projects in his portfolio Would you like to check it out ?',
+            {
+                widget: LearningOptions,
+            }
+        );
+
+        this.setChatbotMessage(message);
+    }
+
+    handleSkill() {
+
+        const message = createChatBotMessage(
+            'Skill are very important to know. Here are some of the skills of Saharsh',
+            {
+                widget: "learningOptions",
+            }
+        );
+
+        this.setChatbotMessage(message);
+    }
+
+    handleProjects() {
+
+        const message = createChatBotMessage(
+            'Here are some projects of saharsh',
+            {
+                widget: "learningOptions",
+            }
         );
 
         this.setChatbotMessage(message);

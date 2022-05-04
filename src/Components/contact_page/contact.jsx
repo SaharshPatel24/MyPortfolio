@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../contact_page/contact.css';
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
+import Navbar from "../navbar/navbar";
 
 const Contact = () => {
     const [firstname, setFirstName] = useState("");
@@ -46,12 +47,9 @@ const Contact = () => {
     };
 
 
-    return (
+    return (<>
+        <Navbar />
         <div className="contact">
-            <div className="contact-heading">
-                <h1>Working Together is Success</h1>
-                <p>~Henry Ford</p>
-            </div>
             <Row className="main-row">
                 <Col className="col-6 form-col">
                     <div className="form-box">
@@ -86,7 +84,7 @@ const Contact = () => {
                                     required
                                 />
                                 <Form.Text className="text-muted">
-                                    We'll never share your email with anyone else.
+                                    I'll never share your email with anyone else.
                                 </Form.Text>
                             </Form.Group>
 
@@ -99,25 +97,30 @@ const Contact = () => {
                                 />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                <Form.Check type="checkbox" label="Is it For Hiring!!"
+                                <Form.Check type="checkbox" style={{ color: "#64ffda" }} label="Is it For Hiring!!"
                                     value={hiring}
                                     onChange={(e) => setHiring(e.target.value)} />
                             </Form.Group>
-                            <Button variant="primary" type="submit" >
+                            <button className="submit-button" variant="primary" type="submit" >
                                 Submit
-                            </Button>
+                            </button>
                         </Form>
                     </div>
                 </Col>
                 <Col className="details row-6">
+                    <h1 className="joke-heading"> Lets Have Some Fun!!!</h1>
                     <div className="quotes">
-                        Lets Have Some Fun!!!
+
+                        <div className="button">
+                            <button className="joke-button" onClick={fetchApi}> get new joke😂</button>
+                        </div>
                         <div className="joke">{posts}</div>
-                        <Button className="joke-button" onClick={fetchApi}> get new joke😂</Button>
+
                     </div>
                 </Col>
             </Row>
         </div >
+    </>
     );
 };
 

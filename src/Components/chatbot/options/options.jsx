@@ -8,14 +8,16 @@ const LearningOptions = (props) => {
             handler: () => props.actionProvider.handleAboutSaharsh(),
             id: 1,
         },
-        // {
-        //     text: "Skills",
-        //     id: 2,
-        // },
-        // {
-        //     text: "Projects",
-        //     id: 3,
-        // },
+        {
+            text: "Skills",
+            handler: () => props.actionProvider.handleSkill(),
+            id: 2,
+        },
+        {
+            text: "Projects",
+            handler: () => props.actionProvider.handleProjects(),
+            id: 3,
+        },
     ];
 
     const optionsMarkup = options.map((option) => (
