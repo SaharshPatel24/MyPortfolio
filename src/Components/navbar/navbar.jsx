@@ -1,35 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import "./navbar.css";
 
 const Navbar = () => {
-    function toggleMobileMenu() {
-        const menu = document.querySelector("#hamburger-icon");
-        menu && menu.classList.toggle('open');
-    }
+    const [toggleState, setToggleState] = useState(false);
+
+    const toggle = () => {
+        setToggleState(toggleState === false ? true : false);
+    };
+
     return (
         <header>
-            <div id="brand"><a className="item title" href="/">
-                <div className="avatar">S</div>
-            </a></div>
-            <nav className="menu">
-                <ul>
-                    <li><a href="/about"><span>01.</span> About  </a> </li>
-                    <li><a href="/projects"><span>02.</span> Projects  </a> </li>
-                    <li><a href="/contact"><span>03.</span> Contact </a></li>
+            <div className="logo" onClick={toggle}>
+                <a href="/">S</a>
+            </div>
+
+            <nav>
+                <i className="fa fa-bars" aria-hidden="true" onClick={toggle} />
+                <ul className={`collapsed ${toggleState ? "is-expanded" : ""}`}>
+                    <NavLink activeclassname="active" onClick={toggle} to="/about">
+                        <li><span>1.</span> About</li>
+                    </NavLink>
+                    <NavLink activeclassname="active" to="/projects" onClick={toggle}>
+                        <li><span>2.</span> Projects</li>
+                    </NavLink>
+                    <NavLink activeclassname="active" to="/contact" onClick={toggle}>
+                        <li><span>3.</span> Contact</li>
+                    </NavLink>
                 </ul>
             </nav>
-            <div id="hamburger-icon" onClick={toggleMobileMenu}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
-                <ul className="mobile-menu">
-                    <li><a href="/about"><span>01.</span> About  </a> </li>
-                    <li><a href="/projects"><span>02.</span> Projects  </a> </li>
-                    <li><a href="/contact"><span>03.</span> Contact </a></li>
-                </ul>
-            </div>
         </header>
     );
 }
 
-export default Navbar;
+export default Navbar
