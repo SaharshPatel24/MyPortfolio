@@ -1,0 +1,57 @@
+.Projects{
+    background-color: #0a192f;
+    color: #ccd6f6;
+    max-width: 100%;
+    width: 100%;
+    margin-left:20%;
+    height: 100vh;
+    text-align: left;
+    margin: 0%;
+    overflow-y: scroll;
+    font-family: monospace;
+}
+
+.Projects::-webkit-scrollbar {
+    display: none;
+}
+
+.banksystem{
+    margin: 0% 13% 3% 13%;
+    text-align: left;
+}
+
+.banksystem h1{
+    color: #ccd6f6;
+}
+
+.banksystem h5{
+    color: #64ffda;
+    word-spacing: 20px;
+}
+
+.banksystem p{
+    color: #8892b0;
+    font-size:24px;
+}
+
+.banksystem .bold{
+   font-weight: bold;
+}
+
+.banksystem .list{
+    list-style: inside;
+    color: #8892b0;
+    word-spacing: 3px;
+ font-size:18px;
+ margin-bottom:50px;
+}
+
+.banksystem .list li{
+    padding: 3px;
+}
+
+.banksystem .list b{
+    color: #ccd6f6;
+}
+
+

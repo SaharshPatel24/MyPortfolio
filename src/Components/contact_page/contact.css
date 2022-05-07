@@ -46,7 +46,7 @@
     padding: 1% 4%  1% 4%;
     border-radius: 10px;
     font-weight:700;
-    margin-left: 70%;
+    margin-left: 65%;
 }
 
 .form-box .submit-button:hover{
@@ -142,6 +142,10 @@
     .form-col{
         width: 100%;
         max-width: 100%;
+    }
+
+    .details{
+        display: none;
     }
 
     .quotes{
