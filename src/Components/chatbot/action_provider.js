@@ -1,5 +1,4 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
-import LearningOptions from './options/options';
 
 class ActionProvider {
     constructor(createChatbotMessage, setStateFunc, createClientMessage) {
@@ -26,8 +25,18 @@ class ActionProvider {
         const message = createChatBotMessage(
             ' Saharsh Patel is passionate and enthusiastic web-developer. From his schools he was very good in the computers and had started learning basics of web-development.Currently, he is about to complete his Computer Programming and Analysis course from the Seneca College.He had gain good skills in the field of web developemt. He has some good projects in his portfolio Would you like to check it out ?',
             {
-                widget: LearningOptions,
+                widget: "learningOptions",
             }
+        );
+
+        this.setChatbotMessage(message);
+    }
+
+    handleShowMore() {
+        const message = createChatBotMessage('Select what you want to see',
+            {
+                widget: 'learningOptions',
+            },
         );
 
         this.setChatbotMessage(message);
@@ -36,10 +45,10 @@ class ActionProvider {
     handleSkill() {
 
         const message = createChatBotMessage(
-            'Skill are very important to know. Here are some of the skills of Saharsh',
+            'Skill are very important to know. Here are some of the skills of Saharsh. If you still want to know more type show more',
             {
-                widget: "learningOptions",
-            }
+                widget: "skills",
+            },
         );
 
         this.setChatbotMessage(message);
@@ -48,9 +57,9 @@ class ActionProvider {
     handleProjects() {
 
         const message = createChatBotMessage(
-            'Here are some projects of saharsh',
+            'Here are some projects of saharsh select to check live demo. And If you want to know more type show more type show more',
             {
-                widget: "learningOptions",
+                widget: "projects",
             }
         );
 

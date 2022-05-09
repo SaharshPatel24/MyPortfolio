@@ -10,7 +10,10 @@ class MessageParser {
             this.actionProvider.handleHello();
         } else if (message.includes('about saharsh')) {
             this.actionProvider.handleAboutSaharsh();
-        } else if (message.includes('how are you')) {
+        } else if (message.includes('show more')) {
+            this.actionProvider.handleShowMore();
+        }
+        else if (message.includes('how are you')) {
             this.actionProvider.handleHowAreYou();
         } else {
             this.actionProvider.handleUnknown();

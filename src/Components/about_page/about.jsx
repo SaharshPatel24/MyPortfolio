@@ -27,7 +27,7 @@ const About = () => {
                             <h1>Life Goal</h1>
                             <div className="content">
                                 <p><span>var</span> Life = GodWillDecide();</p>
-                                <p><span>var</span> learn;</p>
+                                <p><span>var</span> learn = 0;</p>
                                 <span><p>while(Life != end)</p>
                                     <p style={{ marginLeft: "12%" }}>learn++;</p>
                                 </span>
