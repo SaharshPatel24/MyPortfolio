@@ -9,12 +9,3 @@ body{
     background-color: rgb(31, 20, 20);
     color: whitesmoke;
 }
-
-.circle {
-    width: 1px;
-    height: 1px;
-    border-radius: 500%;
-    border: 3px dotted #000;
-    position: absolute;
-    pointer-events:none;
-  }
