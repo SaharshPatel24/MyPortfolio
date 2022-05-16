@@ -39,21 +39,23 @@ const Home = () => {
                     actionProvider={ActionProvider}
                 />
             </Offcanvas>
-            <div className='buttons-container'>
-                <div className='button facebook'>
-                    <i className="fab fa-facebook-f fa-2x"></i>
+            <Col className="link-box">
+                <div className='buttons-container'>
+                    <div className='button facebook'>
+                        <i className="fab fa-facebook-f fa-2x"></i>
+                    </div>
+                    <div className='button twitter'>
+                        <i className="fab fa-twitter fa-2x"></i>
+                    </div>
+                    <div className='button github'>
+                        <i className="fab fa-github fa-2x"></i>
+                    </div>
+                    <div className='button instagram'>
+                        <i className="fab fa-instagram fa-2x"></i>
+                    </div>
                 </div>
-                <div className='button twitter'>
-                    <i className="fab fa-twitter fa-2x"></i>
-                </div>
-                <div className='button github'>
-                    <i className="fab fa-github fa-2x"></i>
-                </div>
-                <div className='button instagram'>
-                    <i className="fab fa-instagram fa-2x"></i>
-                </div>
-            </div>
-            <div className="line-5"></div>
+                <div className="line-5"></div>
+            </Col>
         </Row>
     </>
 
