@@ -56,14 +56,6 @@ class ActionProvider {
 
     handleProjects() {
 
-        const message = createChatBotMessage(
-            'Here are some projects of saharsh select to check live demo. And If you want to know more type show more type show more',
-            {
-                widget: "projectsOption",
-            }
-        );
-
-        this.setChatbotMessage(message);
     }
 
     handleUnknown() {

@@ -29,11 +29,6 @@ const chatbot_config = {
             backgroundColor: '#5ccc9d',
         },
     },
-    state: {
-        about_saharsh: [],
-        sql: [],
-        docker: []
-    },
     widgets: [
         {
             widgetName: "learningOptions",
@@ -43,10 +38,7 @@ const chatbot_config = {
             widgetName: "skills",
             widgetFunc: () => <Skills />,
         },
-        {
-            widgetName: "projectsOption",
-            widgetFunc: () => <Projects_option />,
-        }
+       
     ],
 
 };
