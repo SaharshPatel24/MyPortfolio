@@ -1,8 +1,8 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
-import Projects_option from './widgets/project_options'
 
 import LearningOptions from './options/options';
 import Skills from './widgets/skills/skills';
+import Projects_option from './widgets/project_options/project_options';
 
 const botName = 'Saharsh`s bot';
 
