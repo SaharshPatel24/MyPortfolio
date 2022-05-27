@@ -25,7 +25,7 @@ const Projects_option = () => {
         }
     ]
 
-    const projects = projects_array.map((project) => (
+    const projects_option = projects_array.map((project) => (
         <a href={project.link}
             className="projects-button"
             key={project.id}
@@ -36,7 +36,7 @@ const Projects_option = () => {
     ));
     return (
         <>
-            <div className="learning-options-container">{projects}</div>
+            <div className="learning-options-container">{projects_option}</div>
         </>
     )
 }
