@@ -1,7 +1,7 @@
 import React from React;
 import "./project_option.css"
 
-const Projects = () => {
+const Projects_option = () => {
     const projects_array = [
         {
             text: "Portfolio",
@@ -40,3 +40,5 @@ const Projects = () => {
         </>
     )
 }
+
+export default Projects_option;

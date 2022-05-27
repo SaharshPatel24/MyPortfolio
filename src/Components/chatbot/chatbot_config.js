@@ -1,5 +1,5 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
-import Projects from '../projects/projects';
+import Projects_option from './widgets/project_options'
 
 import LearningOptions from './options/options';
 import Skills from './widgets/skills/skills';
@@ -45,7 +45,7 @@ const chatbot_config = {
         },
         {
             widgetName: "projects",
-            widgetFunc: () => <Projects />,
+            widgetFunc: () => <Projects_option />,
         }
     ],
 
