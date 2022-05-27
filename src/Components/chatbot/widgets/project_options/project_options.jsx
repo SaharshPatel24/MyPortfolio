@@ -10,7 +10,7 @@ const Projects_option = () => {
         },
         {
             text: "Mini Bank",
-            link: "",
+            link: "https://user-management-saharshpatel24.vercel.app/",
             id: 2,
         },
         {
