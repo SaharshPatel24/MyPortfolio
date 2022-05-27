@@ -29,7 +29,7 @@ const Projects_option = () => {
         <a href={project.link}
             className="projects-button"
             key={project.id}
-            style={{ cursor: "not-allowed" }}
+            style={{ cursor: "pointer" }}
         >
             {project.text}
         </a>
