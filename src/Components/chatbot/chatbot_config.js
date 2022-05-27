@@ -38,7 +38,10 @@ const chatbot_config = {
             widgetName: "skills",
             widgetFunc: () => <Skills />,
         },
-       
+        {
+            widgetName: "projectOptions",
+            widgetFunc: () => <Projects_option />,
+        },
     ],
 
 };

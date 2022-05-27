@@ -55,7 +55,14 @@ class ActionProvider {
     }
 
     handleProjects() {
+        const message = createChatBotMessage(
+            'Skill are very important to know. Here are some of the skills of Saharsh. If you still want to know more type show more',
+            {
+                widget: "projectOptions",
+            },
+        );
 
+        this.setChatbotMessage(message);
     }
 
     handleUnknown() {
