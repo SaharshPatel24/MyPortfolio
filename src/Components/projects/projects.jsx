@@ -37,7 +37,7 @@ const Projects = () => {
             </div>
             <div className="banksystem">
                 <h1>Finworld</h1>
-                <h5>#Flutter #Dart #ReactNative #Firebase #NodeJs</h5>
+                <h5>#Flutter #Dart #Firebase #NodeJs</h5>
                 <br></br>
                 <p>Finworld is the smartphone app that has been designed in flutter, which is used in hybrid mobile development that means these app is accessible in Iphone, Android and Web. Finworld is a social media app sucha as instagram and facebook, but is more focused on sharing the financial knowledge in the world</p>
                 <br></br>
