@@ -52,7 +52,8 @@ const About = () => {
                                 2. Serverless CI/CD -AWS
                             </div>
                             <div className="content">
-                                3. Javascript Algorithm and Data Structures    -freeCodeCamp
+                                3. Javascript Algorithm and Data Structures  
+                                    -freeCodeCamp
                             </div>
                             <div className="content">
                                 4. Problem Solving -HackerRank
