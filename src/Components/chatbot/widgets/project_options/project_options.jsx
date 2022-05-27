@@ -33,7 +33,8 @@ const Projects_option = () => {
         >
             {project.text}
         </a>
-    ));
+    ))
+    
     return (
         <>
             <div className="learning-options-container">{projects_option}</div>
