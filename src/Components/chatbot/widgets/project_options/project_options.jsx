@@ -1,4 +1,4 @@
-import React from React;
+import React from 'react';
 import "./project_option.css"
 
 const Projects_option = () => {
@@ -34,7 +34,7 @@ const Projects_option = () => {
             {project.text}
         </a>
     ))
-    
+
     return (
         <>
             <div className="learning-options-container">{projects_option}</div>
