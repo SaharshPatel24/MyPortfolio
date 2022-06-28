@@ -55,12 +55,11 @@ class ActionProvider {
     }
 
     handleProjects() {
-
         const message = createChatBotMessage(
-            'Here are some projects of saharsh select to check live demo. And If you want to know more type show more type show more',
+            'Skill are very important to know. Here are some of the skills of Saharsh. If you still want to know more type show more',
             {
-                widget: "projects",
-            }
+                widget: "projectOptions",
+            },
         );
 
         this.setChatbotMessage(message);

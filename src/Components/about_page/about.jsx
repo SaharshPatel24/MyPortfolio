@@ -38,13 +38,29 @@ const About = () => {
                         <div className="card-design">
                             <h1>Education</h1>
                             <div className="content">
-                                ComputerProgramming
+                                1. Computer Programming and Analysis
                             </div>
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="card-design">
-                            <h1>Skills</h1>
+                            <h1>Certificates</h1>
+                            <div className="content">
+                                1. Elastic Beanstalk -AWS
+                            </div>
+                            <div className="content">
+                                2. Serverless CI/CD -AWS
+                            </div>
+                            <div className="content">
+                                3. Javascript Algorithm and Data Structures  
+                                    -freeCodeCamp
+                            </div>
+                            <div className="content">
+                                4. Problem Solving -HackerRank
+                            </div>
+                            <div className="content">
+                                5. React Framework -HackerRank
+                            </div>
                         </div>
                     </Carousel.Item>
                 </Carousel>

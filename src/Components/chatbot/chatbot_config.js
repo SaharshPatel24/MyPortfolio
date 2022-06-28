@@ -2,6 +2,7 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 
 import LearningOptions from './options/options';
 import Skills from './widgets/skills/skills';
+import Projects_option from './widgets/project_options/project_options';
 
 const botName = 'Saharsh`s bot';
 
@@ -28,11 +29,6 @@ const chatbot_config = {
             backgroundColor: '#5ccc9d',
         },
     },
-    state: {
-        about_saharsh: [],
-        sql: [],
-        docker: []
-    },
     widgets: [
         {
             widgetName: "learningOptions",
@@ -41,7 +37,11 @@ const chatbot_config = {
         {
             widgetName: "skills",
             widgetFunc: () => <Skills />,
-        }
+        },
+        {
+            widgetName: "projectOptions",
+            widgetFunc: () => <Projects_option />,
+        },
     ],
 
 };
