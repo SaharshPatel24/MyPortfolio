@@ -42,16 +42,20 @@ const Home = () => {
             <Col className="link-box">
                 <div className='buttons-container'>
                     <div className='button facebook'>
-                        <i className="fab fa-facebook-f fa-2x"></i>
+                        <a href="https://www.facebook.com/saharsh.patel.524" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f fa-2x"></i></a>
                     </div>
                     <div className='button twitter'>
-                        <i className="fab fa-twitter fa-2x"></i>
+                        <a href="https://www.linkedin.com/in/saharsh-patel-767554239/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-2x"></i></a>
                     </div>
                     <div className='button github'>
-                        <i className="fab fa-github fa-2x"></i>
+                        <a href="https://github.com/SaharshPatel24" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github fa-2x"></i>
+                        </a>
                     </div>
                     <div className='button instagram'>
-                        <i className="fab fa-instagram fa-2x"></i>
+                        <a href="https://www.instagram.com/itzz_ares.24/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-instagram fa-2x"></i>
+                        </a>
                     </div>
                 </div>
                 <div className="line-5"></div>
